@@ -1,3 +1,16 @@
+@media (max-width: 480px) {
+    .header-banner {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px;
+    }
+
+    .header-banner img {
+        max-width: 80%; 
+    }
+    
+}
+
 :root {
     --color-primary: #4B69FD;
     --color-secondary: #FFF9EB;
@@ -41,7 +54,7 @@ body {
 
 /* Seção de entrada */
 .input-section {
-    flex: 60%;
+    flex: 100%;
     background-color: var(--color-secondary);
     border: 1px solid #000;
     border-radius: 64px 64px 0 0;
@@ -52,9 +65,17 @@ body {
     width: 100%;
 }
 
+#mensagemDerro {
+  color: red;
+  font-size: 14px;
+  margin: 0;
+  text-align: left;
+  padding-left: 8%;
+}
+
 /* Títulos */
 .main-title {
-    font-size: 48px;
+    font-size: clamp(24px, 8vw, 48px);
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
