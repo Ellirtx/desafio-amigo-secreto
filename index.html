@@ -13,17 +13,20 @@
 <body>
     <main class="main-content">
         <header class="header-banner">
-            <h1 class="main-title">Amigo Secreto</h1>
+            <h1 class="main-title">Sortear Amigo Secreto</h1>
             <img src="assets/amigo-secreto.png" alt="Imagem representativa de amigo secreto">
         </header>
         
         <section class="input-section">
             <h2 class="section-title">Digite o nome dos seus amigos</h2>
-            <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
-                <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
+            <div>
+                <div class="input-wrapper">
+                    <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
+                    <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
+                </div>
+                <p id="mensagemDerro"></p>
             </div>
-           
+            
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
 

@@ -6,14 +6,16 @@ function limparCampo() {
 }
 
 function adicionarAmigo() {
-    let nomeInse = document.getElementById('amigo').value.trim();
+    let nomeInse = document.getElementById('amigo').value.trim(); 
+    let msgErro = document.getElementById('mensagemDerro');
+
     if (nomeInse === '') {
-        alert ('Campo vazio insira um nome!')
+        msgErro.innerHTML = 'Campo vazio! Insira um nome !!';
         limparCampo();
     } else {
         amigos.push(nomeInse);
+        msgErro.innerText = '';
+        adicionarAmigoarray();
         limparCampo();
-        return console.log(amigos);
-        
     }
 }
